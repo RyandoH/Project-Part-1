@@ -1,0 +1,45 @@
+import java.io.*;
+import javax.swing.*;
+import java.awt.*;
+
+class Mood_Check {
+   Mood_Check() {
+		Frame f = new Frame();
+
+		Label l1 = new Label("What Kind Of Mood Are You Feeling Today?");
+
+		l1.setBounds(100, 50, 300, 80);
+		f.add(l1);
+
+		Checkbox c2 = new Checkbox("Happy " );
+		c2.setBounds(100, 150, 150, 50);
+		f.add(c2);
+		Checkbox c3 = new Checkbox("Sad :(");
+		c3.setBounds(100, 200, 80, 50);
+		f.add(c3);
+		Checkbox c4 = new Checkbox("Mad ");
+		c4.setBounds(100, 250, 80, 50);
+		f.add(c4);
+      
+      {
+		 
+		JButton button = new JButton(
+			" OK"); // creating instance of
+								// JButton
+                        
+		button.setBounds(
+			150, 400, 100,
+			50); // x axis, y axis, width, height
+
+		f.add(button); // adding button in JFrame
+      }
+      
+		f.setSize(800, 800);
+		f.setLayout(null);
+		f.setVisible(true);
+	}
+
+	public static void main(String ar[]) {
+		new Mood_Check();
+	}
+}
